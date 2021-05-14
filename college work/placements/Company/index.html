@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AIT | Company</title>
+  <link rel="shortcut icon" href="https://lh4.googleusercontent.com/Q3rGqvxFZo-Y1855JOamkQEpPya8x6LtX9CSBMH62L6F26vs6uq8FfKf1gNRdSqAjc5QcQ=w16383" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/5a4662180c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="aitLogo">
+      <img
+        src="https://lh6.googleusercontent.com/GhfyupfnilcTtKfT3cGctjUUVeiYqcQAZYp03He2_C6DYT5vG-pKroxB5E3u7QFn_AQikw=w16383"
+        alt="" />
+    </div>
+    <div class="rightCont">
+      <h1 class="Ait">AHMEDABAD INSTITUTE OF TECHNOLOGY</h1>
+      <div class="group1">
+        <p class="group1Ele">EST2004 | AICTE APPROVED | GTU AFFILIATED</p>
+        <div class="btns">
+          <button class="btn" id="myBtn">PAY FEES</button>
+          
+          <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Pay Fees</h2>
+              </div>
+              <div class="modal-body">
+                <form action="">
+                  <p>Please select from following:</p>
+                    <input type="radio" name="gender" value="male" class="sem">Third sem<br>
+                    <input type="radio" name="gender" value="female"class="sem">fifth sem<br>
+                    <input type="radio" name="gender" value="other" class="sem">Seventh sem
+                  <div class="sem">
+                    <input type="submit" value="Submit" class="btn">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+            
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+            </script>
+            
+        </div>
+        <div class="btns">
+          <button class="btn" id="grav" onclick="openForm()">GRIEVANCE</button>
+          <div class="form-popup" id="myForm">
+            <form action="" class="form-container">
+              <h2>Login</h2>
+          
+              <label for="email"><b>User Name</b></label>
+              <input type="text" placeholder="Username" name="email" required>
+          
+              <label for="psw"><b>Email</b></label>
+              <input type="email" placeholder="Email" name="psw" required>
+              
+              <label for="psw"><b>Grievance</b></label>
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+          
+              <button type="submit" class="btn">Login</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+          </div>
+          <script>
+            function openForm() {
+              document.getElementById("myForm").style.display = "block";
+            }
+            
+            function closeForm() {
+              document.getElementById("myForm").style.display = "none";
+            }
+            </script>
+        </div>
+        <div class="btns">
+          <button class="btn" onclick="openForm1()">ADMISSI0N</button>
+          <div class="form-popup" id="myForm1">
+            <form action="" class="form-container">
+              <h2>Login</h2>
+          
+              <label for="FL"><b>Full Name</b></label>
+              <input type="text" placeholder="Full Name" name="FL" required>
+          
+              <label for="MN"><b>Mobile Number</b></label>
+              <input type="number" placeholder="Mobile Number" name="MN" required><br>
+
+              <label for="Email"><b>Email</b></label>
+              <input type="email" placeholder="Email" name="Email" required><br>
+
+              <label for="adress"><b>Adress</b></label>
+              <textarea name="address" id="" cols="30" rows="10"></textarea>
+              
+              <h3 style="color: black; font-size:25px;">Current Academic Status</h3>
+              <form action="">
+                  <input type="radio" name="gender" value="male" class="sem">After 12th<br>
+                  <input type="radio" name="gender" value="female"class="sem">After Diploma<br>
+                  <input type="radio" name="gender" value="other" class="sem">After Graduation
+              </form>
+              <button type="submit" class="btn">Submit</button>
+              <button type="button" class="btn cancel" onclick="closeForm1()">Close</button>
+            </form>
+            <script>
+            function openForm1() {
+              document.getElementById("myForm1").style.display = "block";
+            }
+            
+            function closeForm1() {
+              document.getElementById("myForm1").style.display = "none";
+            }
+            </script>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+  <div class="body">
+    <div class="head">
+      <div class="sol1">
+            <a href="../index.html" style="text-decoration: none;color: rgb(0, 0, 0);"> <div class="navBtns">Home</div></a>
+        </div>
+        <div class="sol1">
+          <div class="navBtns" >About</div>
+          <div class="drop">
+            <a href="../../about/about1/about.html">About Organisation</a>
+            <a href="../../about/about2/index.html">Message</a>
+          </div>
+        </div>
+        <div class="sol1">
+          <div class="navBtns" >Academics</div>
+          <div class="drop">
+            <a href="../../academics/workshop/index.html">Workshops</a>
+            <a href="../../academics/ecourse/index.html">e-courses</a>
+          </div>
+        </div>
+        <div class="sol1">
+          <div class="navBtns" >Ug Program</div>
+          <div class="drop">
+            <a href="../../ug/CE/index.html">Computer engineering</a>
+            <a href="../../ug/it/index.html">information technology</a>
+          </div>
+        </div>
+        <div class="sol1">
+          <div class="navBtns" >Pg Program</div>
+          <div class="drop">
+            <a href="../../pg/mec/index.html">mechanical engineering</a>
+            <a href="../../pg/EE/index.html">electrical engineering</a>
+          </div>
+        </div>
+        <div class="sol1">
+          <div class="navBtns" >Campus</div>
+          <div class="drop">
+            <a href="../../campus/eve/index.html">events</a>
+            <a href="../../campus/media/index.html">Media coverage</a>
+          </div>
+        </div>
+        <div class="sol1">
+          <div class="navBtns" >Placement</div>
+          <div class="drop">
+            <a href="../cell/index.html">cell</a>
+            <a href="index.html">company</a>
+          </div>
+        </div>
+        <div class="sol1">
+          <div class="navBtns" >Resources</div>
+          <div class="drop">
+            <a href="../../resources/smart/index.html">smart classes</a>
+            <a href="../../resources/library/index.html">library</a>
+          </div>
+        </div>
+        <div class="sol1">
+          <a href="../../contact/index.html" style="text-decoration: none;color: rgb(0, 0, 0);"> <div class="navBtns">Contact us</div></a>
+        </div>
+      </div>
+    <h2 class="mainname">COMPANY</h2>
+    <div class="nav">
+        <a href="" class="bar">All</a>
+        <a href="" class="bar">Mechanical / Automobile</a>
+        <a href="" class="bar">EE</a>
+        <a href="" class="bar">EC</a>
+        <a href="" class="bar">Club</a>
+        <a href="" class="bar">Computer/IT</a>
+        <a href="" class="bar">Civil</a>
+        <a href="" class="bar">MBA</a>
+    </div>
+    <div class="boxs">
+        <div class="box">
+           <div class="box1">
+                <img src="data:image/png;base64,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" alt="">
+                <p>Google</p>
+           </div>
+        </div>
+        <div class="box">
+            <div class="box1">
+                 <img src="https://car-logos.net/wp-content/uploads/2018/09/tata-logo.jpg" alt="">
+                 <p>TATA</p>
+            </div>
+         </div>
+         <div class="box">
+            <div class="box1">
+                 <img src="data:image/png;base64,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" alt="">
+                 <p>AMAZON</p>
+            </div>
+         </div>
+         
+    </div>
+</div>
+  <div class="footer">
+    <div class="cont3">
+      <div class="reachus">
+        <h3>REACH US :<i class="fas fa-level-down-alt"></i></h3>
+        <div class="loc1">
+          <div class="map">
+           <a href="https://www.google.com/maps/place/Ahmedabad+Institute+of+Technology/@23.1110974,72.5190591,17z/data=!3m1!4b1!4m5!3m4!1s0x395e82d324d1558f:0x359cebcfc4ad365e!8m2!3d23.1110974!4d72.5212478">
+            <i class="fas fa-map-marker-alt">
+              <span class="tooltiptext">Location</span>
+            </i>
+           </a>
+          </div>
+          <div class="map">
+            <a href="">
+              <i class="fas fa-phone-square-alt">
+                <span class="tooltiptext">91+9225225292</span>
+              </i>
+            </a>
+          </div> 
+          <div class="map">
+            <a href="mailto:info@aitindia.in">
+              <i class="fas fa-envelope-open">
+                <span class="tooltiptext">info@aitindia.in</span>
+              </i>
+            </a>
+          </div> 
+          <div class="map">
+            <a href="mailto:admission@aitindia.in">
+              <i class="fas fa-envelope">
+                <span class="tooltiptext">admission@aitindia.in</span>
+              </i>
+            </a>
+          </div> 
+          
+        </div>
+      </div>
+      <div class="facebook">
+        <a href="https://www.facebook.com/aitcollege2004" id="fb">
+          <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="https://www.facebook.com/aitcollege2004" id="tweet">
+          <i class="fab fa-twitter-square"></i>
+        </a>
+      </div>
+      <div class="reachus">
+        <h3>Contact US :<i class="fas fa-level-down-alt"></i></h3>
+        <div class="loc1">
+          <div class="map">
+            <a href="">
+              <i class="fas fa-phone-square-alt">
+                <p class="textphone">(For Placement)</p>
+                <span class="tooltiptext">91+9225225292</span>
+              </i>
+            </a>
+          </div>
+          <div class="map">
+            <a href="">
+              <i class="fas fa-phone-square-alt">
+                <p class="textphone">(For Admission Inquiry)</p>
+                <span class="tooltiptext">91+9225225292</span>
+              </i>
+            </a>
+          </div>
+          <div class="map">
+            <a href="">
+              <i class="fas fa-phone-square-alt">
+                <p class="textphone">(For General information)</p>
+                <span class="tooltiptext">91+9225225292</span>
+              </i>
+            </a>
+          </div>
+          <div class="map">
+            <a href="">
+              <i class="fas fa-phone-square-alt">
+                <p class="textphone">(For General information)</p>
+                <span class="tooltiptext">91+9225225292</span>
+              </i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rights">
+      <p>Copyright ©2021 All rights reserved with by Ahmedabad Institute of Technology</p>
+    </div>
+    <div class="devloper">
+      <p>Developed by 180020107046<a href="https://www.instagram.com/stellar_prachi/">Prachi Patel</a></p>
+    </div>
+  </div>
+</body>
+</html>

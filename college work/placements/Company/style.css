@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  height: 150px;
+  background-color: #0d1128;
+  width: auto;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+.aitLogo img {
+  margin: 0 5vw 0 0;
+  border-radius: 50%;
+  box-shadow: inset 0 0 1px #0d1128;
+  width: 150px;
+  height: 150px;
+}
+.rightcont {
+  padding: 5px;
+  flex-grow: 1;
+}
+
+h1 {
+  margin: 0 0 20px 0;
+  line-height: 50px;
+  font-size: 2.5vw;
+  color: #fff894f6;
+  font-family: "Vast Shadow", cursive;
+  transition: 0.5s;
+  overflow: hidden;
+  white-space: nowrap;
+}
+h1:hover {
+  box-shadow: inset 0 0 20px black;
+  text-shadow: 0 0 25px #ffffff;
+  box-shadow: inset 0 0 25px #d17774;
+  border-radius: 12px;
+  border: 1px solid #d17774;
+  cursor: pointer;
+  transition-delay: 0.3s;
+}
+.group1 {
+  display: flex;
+  float: right;
+  align-items: center;
+  width: auto;
+  margin: 0 10px 0 0;
+  flex-wrap: wrap;
+}
+.group1Ele {
+  margin: 0 5vw 10px 0;
+  color: #e6df89d0;
+  font-size: 18px;
+  white-space: nowrap;
+}
+.btn {
+  padding: 10px 20px;
+  border-style: none;
+  background-color: transparent;
+  color: #e6df89d0;
+  font-size: 18px;
+  border: 2px solid white;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.btn:hover {
+  background-color: #e6df89d0;
+  color: #0d1128;
+}
+.body {
+  background-color: rgb(255, 255, 255);
+}
+.sequence {
+  margin: 20px 20%;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  color: red;
+}
+.head {
+  background-color: #e6de8942;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.head::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid;
+  transition: 0.5s;
+  box-shadow: 0 0 20px #792e00a6;
+  border-color: rgba(0, 0, 0, 0.103);
+  visibility: hidden;
+}
+.head::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 2px solid;
+  transition: 0.5s;
+  box-shadow: 0 0 20px #792e00a6;
+  border-color: rgba(0, 0, 0, 0.103);
+  visibility: hidden;
+}
+.head:hover::before {
+  animation: animate 5s linear infinite;
+  visibility: visible;
+}
+.head:hover::after {
+  animation: animate 3s linear infinite;
+  visibility: visible;
+}
+@keyframes animate {
+  0% {
+    transform: translateX(0);
+    filter: blur(0);
+  }
+  50% {
+    transform: translateX(100vw);
+    filter: blur(1);
+  }
+  100% {
+    transform: translateX(0);
+    filter: blur(0);
+  }
+}
+.sol1{
+  position: relative;
+  
+  transition: 1s;
+  flex-grow: 1;
+  
+  text-align: center;
+}
+.sol1 .navBtns{
+  width: 100px;
+  line-height: 50px;
+  margin: 0 2vw;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: 0.5s;
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 5;
+}
+.sol1:hover{
+  flex-grow: 4;
+  background-color: #fd6001;
+  border: 2px solid rgba(0, 0, 0, 0.096);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.356);
+}
+.sol1:hover .navBtns{
+  color: white;
+}
+.sol1:hover .drop{
+  visibility: visible;
+}
+.drop{
+  visibility: hidden;
+  position: absolute;
+  z-index: 15;
+  background-color: white;
+  width: 100%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0);
+  text-align: left;
+}
+.drop a{
+  display: block;
+  padding: 16px 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: #e6de8942;
+}
+.drop a:hover{
+  background-color: #0d1128;
+  color: white;
+}
+@keyframes animate {
+  0% {
+    transform: translateX(0);
+    filter: blur(0);
+  }
+  50% {
+    transform: translateX(100vw);
+    filter: blur(1);
+  }
+  100% {
+    transform: translateX(0);
+    filter: blur(0);
+  }
+}
+.sol1 {
+  position: relative;
+  width: 100px;
+  transition: 1s;
+  flex-grow: 1;
+  z-index: 5;
+  text-align: center;
+}
+.sol1 .navBtns {
+  line-height: 50px;
+  margin: 0 20px;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: 0.5s;
+  font-size: 25px;
+  cursor: pointer;
+}
+.sol1:hover {
+  flex-grow: 4;
+  background-color: #fd6001;
+  border: 2px solid rgba(0, 0, 0, 0.096);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.356);
+}
+.sol1:hover .navBtns {
+  color: white;
+}
+.sol1:hover .drop {
+  visibility: visible;
+}
+.drop {
+  visibility: hidden;
+  position: absolute;
+  z-index: 15;
+  background-color: white;
+  width: 100%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0);
+  text-align: left;
+}
+.drop a {
+  display: block;
+  padding: 16px 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: #e6de8942;
+}
+.drop a:hover {
+  background-color: #0d1128;
+  color: white;
+}
+@media screen and (max-width: 1100px) {
+}
+.mainname {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 35px;
+  color: chocolate;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+.nav .bar{
+    text-align: center;
+    flex-grow: 1;
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.452);
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgb(27, 1, 27);
+    border-radius: 15px;
+    font-family: "Roboto", sans-serif;
+    transition: 0.4s;
+}
+.nav .bar:hover{
+    color: chocolate;
+    box-shadow:inset 0 0 12px white;
+    flex-grow: 3;
+}
+.boxs{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin: 120px;
+}
+.box{
+    border: 2px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 300px;
+    height: 150px;
+    margin: 20px 10px;
+}
+.box1{
+    font-family: "Roboto", sans-serif;
+    transition: 0.5s;
+    cursor: pointer;
+    width: 300px;
+}
+.box img{
+    width: 300px;
+    height: 150px;
+    z-index: 12;
+    margin: 0 0 20px 0;
+    background-position: center;
+}
+.box p{
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+    color: chocolate;
+    background-color: black;
+    padding: 15px;
+}
+.box1:hover{
+    transform: translatey(-70px);
+}
+.footer {
+  padding-top: 40px;
+  width: 100%;
+  background-color: rgb(32, 32, 32);
+  z-index: 15;
+  overflow: hidden;
+}
+.cont3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.reachus {
+  flex-grow: 2;
+  height: 500px;
+  width: 300px;
+  text-align: center;
+  margin: 0 2.5vw;
+}
+.reachus h3 {
+  color: white;
+  font-size: 25px;
+  margin: 30px 0;
+  font-family: "Krona One", sans-serif;
+}
+.reachus h3 i {
+  margin: 0 1.5vw;
+  font-size: 20px;
+}
+.reachus .loc1 {
+  padding: 20px 0;
+  border: 3px solid rgba(0, 0, 0, 0.555);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.671), inset 0 0 15px rgb(248, 248, 248);
+}
+.reachus .loc1:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.671), inset 0 0 15px rgb(255, 136, 0);
+}
+.reachus .loc1 .map a {
+  text-decoration: none;
+  color: white;
+}
+.reachus .loc1 .map a i {
+  font-size: 25px;
+  transition: 0.5s;
+  height: 80px;
+}
+.reachus .loc1 .map a i .tooltiptext {
+  position: absolute;
+  margin: 50px 50px 50px -30px;
+  overflow: hidden;
+  transform: translate(-40%, -50%);
+  width: 240px;
+  border: 2px solid rgb(131, 73, 7);
+  color: #fff;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 6px;
+  visibility: hidden;
+}
+.reachus .loc1 .map a i:hover {
+  color: rgb(255, 106, 0);
+}
+.reachus .loc1 .map a i:hover .tooltiptext {
+  visibility: visible;
+  background-color: rgb(255, 106, 0);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.616);
+}
+.facebook {
+  text-align: center;
+  flex-grow: 3;
+  width: 300px;
+}
+.facebook a {
+  text-decoration: none;
+  color: white;
+  font-size: 50px;
+}
+.facebook a:hover {
+  color: rgb(0, 162, 255);
+}
+.textphone {
+  position: absolute;
+  white-space: nowrap;
+  font-size: 18px;
+  transform: translate(-40%, 120%);
+  transition: 0.5s;
+}
+.reachus .loc1 .map a i:hover .textphone {
+  visibility: hidden;
+}
+.rights {
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  margin: 50px 0 10px 0;
+}
+.devloper {
+  text-align: center;
+  color: white;
+  margin: 10px 0 150px 0;
+  font-size: 18px;
+}
+.devloper a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+.devloper a:hover {
+  color: rgb(255, 106, 0);
+}
